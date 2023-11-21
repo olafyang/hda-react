@@ -10,6 +10,7 @@
 
 .card-image {
 	margin: 0 3rem 0 2rem;
+	max-height: 3rem;
 }
 
 .card-title {

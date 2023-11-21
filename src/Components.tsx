@@ -8,9 +8,15 @@ export default function Components() {
 		<>
 			<div className="componentsContainer">
 				<Hooks />
-				<Card logo="/vite.svg" title="Vitejs" link="https://vitejs.dev/" />
-				<Card logo="/vite.svg" title="Vitejs" link="https://vitejs.dev/" />
-				<Hello name="earth" frage="how are you?" />
+				<div className="cardsContainer">
+					<Card logo="/vite.svg" title="Vitejs" link="https://vitejs.dev/" />
+					<Card
+						logo="/hda.png"
+						title="Hochschule Darmstadt"
+						link="https://h-da.de/"
+					/>
+					<Hello name="earth" frage="how are you?" />
+				</div>
 			</div>
 		</>
 	);
