@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -7,15 +9,17 @@ export default function Navbar() {
 				<h1>
 					<a>Name</a>
 				</h1>
-				<p>
-					<a>Item 1</a>
-				</p>
-				<p>
-					<a>Item 2</a>
-				</p>
-				<p>
-					<a>Item 3</a>
-				</p>
+				<ul className="nav-items">
+					<li>
+						<Link to="/home">Home</Link>
+					</li>
+					<li>
+						<Link to="/about">About</Link>
+					</li>
+					<li>
+						<Link to="/components">Components</Link>
+					</li>
+				</ul>
 			</nav>
 		</>
 	);

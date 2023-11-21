@@ -1,0 +1,9 @@
+.hooksBtns {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.hooksBtns button {
+	padding: 0.1rem 0.5rem;
+}
