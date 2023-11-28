@@ -1,0 +1,26 @@
+.vacationContainer {
+	margin-top: 2rem;
+}
+.btnsContainer {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.btn {
+	background-color: grey;
+	padding: 1rem 1.5rem;
+	border: none;
+	border-radius: 2rem;
+}
+.active {
+	background-color: teal;
+}
+.img {
+	max-width: 100vw;
+}
+.loader {
+	height: 30rem;
+	width: 100vw;
+	background-color: gray;
+}

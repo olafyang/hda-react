@@ -19,6 +19,9 @@ export default function Navbar() {
 					<li>
 						<Link to="/components">Components</Link>
 					</li>
+					<li>
+						<Link to="/vacation">Vacation</Link>
+					</li>
 				</ul>
 			</nav>
 		</>
