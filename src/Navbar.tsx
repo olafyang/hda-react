@@ -7,7 +7,7 @@ export default function Navbar() {
 		<>
 			<nav>
 				<h1>
-					<a>Name</a>
+					<a>React - Olaf Yang</a>
 				</h1>
 				<ul className="nav-items">
 					<li>
