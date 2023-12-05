@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Components from "./Components";
 import Vacation from "./Vacation";
+import CurrencyConverter from "./CurrencyConverter.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
 			{
 				path: "/vacation",
 				element: <Vacation />,
+			},
+			{
+				path: "/currency",
+				element: <CurrencyConverter />,
 			},
 		],
 	},

@@ -22,6 +22,9 @@ export default function Navbar() {
 					<li>
 						<Link to="/vacation">Vacation</Link>
 					</li>
+					<li>
+						<Link to="/currency">Currency Converter</Link>
+					</li>
 				</ul>
 			</nav>
 		</>
