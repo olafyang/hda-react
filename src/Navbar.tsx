@@ -25,6 +25,9 @@ export default function Navbar() {
 					<li>
 						<Link to="/currency">Currency Converter</Link>
 					</li>
+					<li>
+						<Link to="/search">Search</Link>
+					</li>
 				</ul>
 			</nav>
 		</>

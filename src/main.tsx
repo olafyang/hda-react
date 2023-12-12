@@ -9,6 +9,7 @@ import About from "./About";
 import Components from "./Components";
 import Vacation from "./Vacation";
 import CurrencyConverter from "./CurrencyConverter.tsx";
+import Search from "./Search.tsx";
 
 const router = createBrowserRouter([
 	{
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
 			{
 				path: "/currency",
 				element: <CurrencyConverter />,
+			},
+			{
+				path: "/search",
+				element: <Search />,
 			},
 		],
 	},
