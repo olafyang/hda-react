@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import "./Search.css";
+
 const months = [
 	"January",
 	"Febuary",
@@ -24,7 +26,7 @@ export default function Search() {
 	}, [query]);
 
 	return (
-		<>
+		<div className="searchWrapper">
 			<input
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
@@ -32,6 +34,6 @@ export default function Search() {
 			/>
 			<p>{res.join(", ")}</p>
 			<p>CASE SENSITIVE!!</p>
-		</>
+		</div>
 	);
 }
