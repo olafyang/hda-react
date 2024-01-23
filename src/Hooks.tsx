@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Button, ButtonGroup } from "@mui/material";
 
 import "./Hooks.css";
 
@@ -14,27 +15,29 @@ export default function Hooks() {
 	return (
 		<div className="hooks">
 			<div className="hooksBtns">
-				<button
-					onClick={() => {
-						setSelectedBtn(1);
-					}}
-				>
-					1
-				</button>
-				<button
-					onClick={() => {
-						setSelectedBtn(2);
-					}}
-				>
-					2
-				</button>
-				<button
-					onClick={() => {
-						setSelectedBtn(3);
-					}}
-				>
-					3
-				</button>
+				<ButtonGroup>
+					<Button
+						onClick={() => {
+							setSelectedBtn(1);
+						}}
+					>
+						1
+					</Button>
+					<Button
+						onClick={() => {
+							setSelectedBtn(2);
+						}}
+					>
+						2
+					</Button>
+					<Button
+						onClick={() => {
+							setSelectedBtn(3);
+						}}
+					>
+						3
+					</Button>
+				</ButtonGroup>
 			</div>
 
 			<h1>Selected Button {selectedBtn}</h1>

@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./CurrencyConverter.css";
 
+import { Button, TextField } from "@mui/material";
+import LoopIcon from "@mui/icons-material/loop";
+
 export default function CurrencyConverter() {
 	const eurExchangeRate = {
 		USD: 1.08,
@@ -15,8 +18,8 @@ export default function CurrencyConverter() {
 			<h1>Currency Converter</h1>
 			<div className="converterWrapper">
 				<div className="currencyField">
-					<h3>{fromEUR ? "EUR" : "USD"}</h3>
-					<input
+					<TextField
+						label={fromEUR ? "EUR" : "USD"}
 						value={input.toFixed(2)}
 						onChange={(e) => {
 							const newVal = Number(e.target.value);
@@ -29,18 +32,23 @@ export default function CurrencyConverter() {
 						type="number"
 					/>
 				</div>
-				<button
+				<Button
+					variant="contained"
 					onClick={() => {
 						setInput(result);
 						setResult(input / eurExchangeRate.USD);
 						setFromEUR(!fromEUR);
 					}}
 				>
-					&lt; - &gt;
-				</button>
+					<LoopIcon />
+				</Button>
 				<div className="currencyField">
-					<h3>{fromEUR ? "USD" : "EUR"}</h3>
-					<input value={result.toFixed(2)} readOnly type="number" />
+					<TextField
+						disabled
+						value={result.toFixed(2)}
+						label={!fromEUR ? "EUR" : "USD"}
+						type="number"
+					/>
 				</div>
 			</div>
 		</>

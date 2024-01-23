@@ -1,3 +1,7 @@
 .converterWrapper {
 	display: flex;
+	margin-top: 2rem;
+}
+.converterWrapper * {
+	margin: 0 0.5rem;
 }

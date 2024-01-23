@@ -1,3 +1,5 @@
+.nova/
+
 # Logs
 logs
 *.log

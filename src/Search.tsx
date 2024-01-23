@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { TextField } from "@mui/material";
 
 import "./Search.css";
 
@@ -27,13 +28,17 @@ export default function Search() {
 
 	return (
 		<div className="searchWrapper">
-			<input
+			<TextField
+				variant="filled"
+				label="Query"
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
 				type="text"
 			/>
 			<p>{res.join(", ")}</p>
-			<p>CASE SENSITIVE!!</p>
+			<p>
+				<b>CASE SENSITIVE!!</b>
+			</p>
 		</div>
 	);
 }

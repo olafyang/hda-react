@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "@mui/material";
 
 import beach from "./assets/beach.jpg";
 import winter from "./assets/trees.jpg";
@@ -11,22 +12,24 @@ export default function Vacation() {
 		<>
 			<div className={styles.vacationContainer}>
 				<div className={styles.btnsContainer}>
-					<button
+					<Button
 						onClick={() => {
 							setImg(winter);
 						}}
 						className={`${styles.btn} ${img === winter ? styles.active : ""}`}
+						variant="contained"
 					>
 						Winter Wonderland
-					</button>
-					<button
+					</Button>
+					<Button
 						onClick={() => {
 							setImg(beach);
 						}}
 						className={`${styles.btn} ${img === beach ? styles.active : ""}`}
+						variant="contained"
 					>
 						Tropical Island
-					</button>
+					</Button>
 				</div>
 
 				{(() => {
